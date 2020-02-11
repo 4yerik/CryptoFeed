@@ -4,14 +4,28 @@ import React, {Component} from 'react';
 import Card from './Components/Card/Card.jsx';
 
 class Experience extends Component {
+
+    
     
     render() {
-        const prodigyTitle = "Prodigy";
-        const prodigyRole = "Test Automation Engineer";
-        const prodigyMission = "Prodigy is an education startup that was founded in 2010 by two waterloo alumni, Alexander Peters and Rohan Mahimker. The company currently has over 300 employees and is one of Canada's fastest growing startups. Prodigy's mission is to help every student in the world love learning.";
-        const prodigyTextOne = "A lot of Prodigy's structure was inspired by Spotify. This includes daily standups and team sizes that are no bigger than the \"2 pizza rule\". Every tech team at Prodigy includes a mix of fullstack developers, quality assurance engineers, a designer, and a product manager. ";
-        const prodigyTextTwo = "At Prodigy, I learned the best practices around testing and used that knowledge to write end to end automation tests with Cypress.";
+
         const prodigyImage= "https://4yerik.github.io/src/images/prodigy/prodigyLogo.png";
+        const details = [
+            {
+                title: "Prodigy",
+                role: "Test Automation Engineer",
+                mission: "Prodigy is an education startup that was founded in 2010 and is currently one of Canada's fastest growing startups. Prodigy's mission is to help every student in the world love learning.",
+                rows: 2,
+                one: "A lot of Prodigy's structure was inspired by Spotify. This includes daily standups and team sizes that are no bigger than the \"2 pizza rule\".",
+                two: "At Prodigy, I learned the best practices around testing and used that knowledge to write end to end automation tests with Cypress.",
+                three: "Radical Candor, the ability to be direct\nExtreme Ownership, the commitment to projects\nGrowth Mindset, the willingness to learn\nUser Obsessed, to prioritize the needs of the user",
+            },
+            {
+
+            },
+
+        ];
+        
 
         const mathTitle = "Private Math Tutor";
         const mathRole = ""
@@ -20,18 +34,29 @@ class Experience extends Component {
         const mathTextTwo = "Thank you for helping us over the past three years. We wish you all the best. - Evlin, George and Julia's mom";
         const mathTextThree ="Thank you so much for helping Dylan, you were such a big help to him. - Laura and Troy, Dylan's Parents"
         const canterburyTitle = "Canterbury";
-        const canterburyRole = "Test Automation Engineer";
+        const canterburyRole = "Overnight Camp Leader";
         const canterburyText = "Yes Yes";
+        const canterburyTextOne = "Furthermore, I made up games and challenges to keep campers engaged and laughing. ";
+        const canterburyTextTwo = "Canterbury Hills is a camp located in Ancaster, ON that has been operating since 1960. Every week, I was assigned to a new group of campers in a specific age group. Each week was a little different, but in general I led classic camp activities such as archery, rock climbing, high ropes, campfires, and hiking." 
+        const hwdsbTitle = "Hamilton Wentworth District School Board";
+        const hwdsbRole = "Summer Camp Counsellor";
+        const hwdsbText = "Yes Yes";
+        const hwdsbTextOne = "During the summer of 2016, I was selected to be part of HWDSB's Focus on Youth staff. Focus on Youth is a partnership between HWDSB and non-profit organizations that supports inner cities in delivering free or low-cost summer programs and activities.";
+        const hwdsbTextTwo = "I was placed at Bennetto Elementary school where I helped YMCA supervise roughly 40 campers. I engaged campers in activities such as basketball, dodgeball, swimming, crafts and reading.";
+        const hwdsbTextThree = "Yes Yes";
+
+        
         return (
             <div>
-                <Card 
-                    title={prodigyTitle}
-                    role={prodigyRole}
-                    mission={prodigyMission}
-                    textOne={prodigyTextOne}
-                    textTwo={prodigyTextTwo}
-                    imgSrc={prodigyImage}
-                />
+                {details.map(detail =>
+                // {console.log(detail)}
+                    <Card>
+                        title={detail.title}
+                        role={detail.role}
+                    </Card>
+                )
+                }
+                
 
                 <Card 
                     title={mathTitle}
@@ -40,12 +65,17 @@ class Experience extends Component {
                     textOne={mathTextOne}
                     textTwo={mathTextTwo}
                     textThree={mathTextThree}
+                    // color="111111"
                 />
 
                 <Card 
                     title={canterburyTitle}
                     role={canterburyRole}
-                    text={canterburyText}
+                    textOne={canterburyText}
+                    textTwo={canterburyText}
+                    textThree={canterburyText}
+                    textFour={canterburyText}
+                    // color="000000"
                 />
 
                 <section id="work">
@@ -62,26 +92,8 @@ class Experience extends Component {
                         </div>
 
                         <div className="grid">
-                            <div className="whole text pb-25">
-                                <p>
-                                
-                                </p>
-
-                                <p>Radical Candor, the ability to be direct</p>
-                                <p>Extreme Ownership, the commitment to projects</p>
-                                <p>Growth Mindset, the willingness to learn</p>
-                                <p>User Obsessed, to prioritize the needs of the user</p>
-                            </div>   
-                        </div>
-                        <div className="grid">
                             <img className="square left border" src="https://4yerik.github.io/src/images/prodigy/teamLunch.jpg"/>
                             <div className="right text pl-25">
-                                <p>
-                                    
-                                </p>
-                                <p>
-                                    
-                                </p>
 
                                 <p>
                                     In addition to writing automation tests, I had the opportunity to write code for Prodigy's 
@@ -135,14 +147,10 @@ class Experience extends Component {
                                 <h3>Overnight Camp Leader</h3>
                                 <p>
                                     <a href="https://canterburyhillscamp.ca/about" target="blank">Canterbury Hills</a>&nbsp;
-                                    is a camp located in Ancaster, ON that has been operating since 1960. 
-                                    Every week, I was assigned to a new group of campers 
-                                    in a specific age group. Each week was a little different, but in general 
-                                    I led classic camp activities 
-                                    such as archery, rock climbing, high ropes, campfires, and hiking. 
+                                    
                                 </p>
                                 <p>
-                                    Furthermore, I made up games and challenges to keep campers engaged and laughing. 
+                                    
                                     An example of a challenge was seeing who could stand underneath a cold waterfall the longest. 
                                 </p>
                             </div>
@@ -195,24 +203,6 @@ class Experience extends Component {
                                 </p>
                             </div>
                             <img className="square right border" src="https://4yerik.github.io/src/images/canterbury/more.PNG"/>
-                        </div>
-                    </section>
-
-
-                    <section className="grid pt-25 pb-25" id="HWDSB">
-                        <div className="whole">
-                            <h3>Hamilton Wentworth District School Board</h3>
-                            <h4>Summer Camp Counsellor</h4>
-                            <p>
-                                During the summer of 2016, I was selected to be part of HWDSB's Focus on Youth staff. Focus 
-                                on Youth is a partnership between HWDSB and non-profit organizations that supports inner 
-                                cities in delivering free or low-cost summer programs and activities.
-                            </p>
-                            <p>
-                                I was placed at Bennetto Elementary school where I helped YMCA supervise roughly 
-                                40 campers. I engaged campers in activities such as basketball, dodgeball, swimming, 
-                                crafts and reading.
-                            </p>
                         </div>
                     </section>
             </div>

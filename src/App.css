@@ -515,13 +515,17 @@ header h2{
 .panel {
   display: flex;
   justify-content: space-around;
+  padding: 20px 20px;
+  
 }
 
 .info {
+  padding: 50px 50px;
+  margin: 10px 10px;
   width: 30%;
   border: 2px solid;
   border-color: silver;
   border-radius: 8px;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
 
 }

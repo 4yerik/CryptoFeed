@@ -9,6 +9,7 @@ import Projects from "./Projects";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from './Footer';
 
+
 function App() {
   return (
     <div className="App">

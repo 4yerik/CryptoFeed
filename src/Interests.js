@@ -52,11 +52,11 @@ const Interests = () => (
       <Leaf 
       title="Snowboarding"
         text="
-        The first time I went snowboarding, I did not achieve anything besides rolling down the entire bunny hill at Glen Eden. I saw some cool snowboarding videos
-          and decided I wanted to get better at snowboarding. That winter, it dumped snow during my winter break. I was outside for
-          8 hours at a time snowboarding. Falling didn't even hurt because you landed in a foot of fluffy snow. It
-          was awesome. I learned how to turn from toe side and heel side. I even learned how to not fall off the ski lift. I fell
-          in love with snowboarding. The adrenaline on the slopes and the amazing views were priceless. "
+        The first time I went snowboarding, I did not achieve anything besides rolling down the entire bunny hill at Glen Eden.
+        However, the following winter it snowed roughly 50cm during the break and I was able to practice a lot. 
+        Falling didn't even hurt because you landed in a foot of fluffy snow. 
+        I fell
+          in love with snowboarding for the adrenaline on the slopes and the amazing views. "
         image="https://github.com/4yerik/images/blob/master/family/montSutton.PNG?raw=true"
 
       >

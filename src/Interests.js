@@ -31,6 +31,19 @@ const Interests = () => (
       >
       </Leaf>
 
+      <Leaf 
+      title="Snowboarding"
+        text="
+        The first time I went snowboarding, I did not achieve anything besides rolling down the entire bunny hill at Glen Eden.
+        However, the following winter it snowed roughly 50cm during the break and I was able to practice a lot. 
+        Falling didn't even hurt because you landed in a foot of fluffy snow. 
+        I fell
+          in love with snowboarding for the adrenaline on the slopes and the amazing views. "
+        image="https://github.com/4yerik/images/blob/master/family/montSutton.PNG?raw=true"
+
+      >
+      </Leaf>
+
 
       <Leaf 
       title="Fitness"
@@ -49,18 +62,7 @@ const Interests = () => (
       >
       </Leaf>
 
-      <Leaf 
-      title="Snowboarding"
-        text="
-        The first time I went snowboarding, I did not achieve anything besides rolling down the entire bunny hill at Glen Eden.
-        However, the following winter it snowed roughly 50cm during the break and I was able to practice a lot. 
-        Falling didn't even hurt because you landed in a foot of fluffy snow. 
-        I fell
-          in love with snowboarding for the adrenaline on the slopes and the amazing views. "
-        image="https://github.com/4yerik/images/blob/master/family/montSutton.PNG?raw=true"
-
-      >
-      </Leaf>
+      
 
       
 

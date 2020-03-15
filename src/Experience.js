@@ -22,7 +22,7 @@ class Experience extends Component {
             },
             {
                 title: "Prodigy",
-                role: "Test Automation Engineer",
+                role: "Automation Engineer",
                 period: "May 2019 - August 2019",
                 mission: "Prodigy is an education startup that was founded in 2010 and is currently one of Canada's fastest growing startups. Prodigy's mission is to help every student in the world love learning.",
                 type: "regular",
@@ -72,8 +72,8 @@ class Experience extends Component {
                 period: "July 2016 - August 2016",
                 textOne: "Focus on Youth is a partnership between HWDSB and non-profit organizations that supports inner cities in delivering free or low-cost summer programs and activities.",
                 type: "short",
-                textTwo: "During the summer of 2016, I was selected to be part of HWDSB's Focus on Youth staff.",
-                textThree: "I was placed at Bennetto Elementary school where I helped YMCA supervise roughly 40 campers. I engaged campers in activities such as basketball, dodgeball, swimming, crafts and reading.",
+                textTwo: "During the summer of 2016, I was selected to be part of HWDSB's Focus on Youth staff. I was placed at Bennetto Elementary school where I helped YMCA supervise roughly 40 campers.",
+                textThree: " I engaged campers in activities such as basketball, dodgeball, swimming, and crafts. In addition, I promoted the literacy program by helping campers learn how to read.",
             }
 
         ];

@@ -192,9 +192,10 @@ ul {
 .card {
   border: 10px solid;
   border-color: 	#e3d4b6;
-  border-radius: 8px;
+  border-radius: 2px;
   margin: 20px 50px 80px 50px;
   padding: 20px 20px;
+  background-color: white;
 }
 
 .panel {
@@ -304,4 +305,9 @@ img {
 .leaf-title {
   color: white;
   /* text-shadow: 3px 3px black; */
+}
+
+.project {
+  border-left: 2px black solid;
+  margin: 20px 20px;
 }

@@ -5,7 +5,9 @@ import { Carousel } from 'react-responsive-carousel';
 
 const details = [
   {
-    value: "yes"
+    value: "schema, data sources, resolvers, ",
+    resolver: "(parent, args, context, info) => data",
+    tricks: "pagination"
   },
 
 ];

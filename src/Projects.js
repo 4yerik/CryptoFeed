@@ -5,7 +5,12 @@ import { Carousel } from 'react-responsive-carousel';
 
 const details = [
   {
-    value: "schema, data sources, resolvers, ",
+    image: "https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg",
+    resolver: "(parent, args, context, info) => data",
+    tricks: "pagination"
+  },
+  {
+    image: "https://www.thesprucepets.com/thmb/LPnj-N-AcGdZRvf7E6y_Hsf2vqo=/4089x2300/smart/filters:no_upscale()/close-up-of-a-hamster-eating-groundnut-635096689-5c525f88c9e77c0001d7c1fa.jpg",
     resolver: "(parent, args, context, info) => data",
     tricks: "pagination"
   },
@@ -18,8 +23,8 @@ const Projects = () => (
       <div className="project">
         <Carousel useKeyboardArrows={true}>
                 <div>
-                    <img src="https://www.thesprucepets.com/thmb/LPnj-N-AcGdZRvf7E6y_Hsf2vqo=/4089x2300/smart/filters:no_upscale()/close-up-of-a-hamster-eating-groundnut-635096689-5c525f88c9e77c0001d7c1fa.jpg"></img>
                     <p className="legend">Legend 1</p>
+                    <img src={detail.image}></img>
                 </div>
                 <div>
                     <img src="https://www.thesprucepets.com/thmb/LPnj-N-AcGdZRvf7E6y_Hsf2vqo=/4089x2300/smart/filters:no_upscale()/close-up-of-a-hamster-eating-groundnut-635096689-5c525f88c9e77c0001d7c1fa.jpg"></img>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Clock from './Components/Clock/index.jsx'
 
 const details = [
   {
@@ -14,6 +15,9 @@ const details = [
     resolver: "(parent, args, context, info) => data",
     tricks: "pagination"
   },
+  {
+    image: "https://github.com/4yerik/images/blob/master/projects/website.PNG?raw=true"
+  }
 
 ];
 
@@ -21,10 +25,10 @@ const Projects = () => (
   <div>
     {details.map(detail => (
       <div className="project">
-        <Carousel useKeyboardArrows={true}>
+        <Carousel useKeyboardArrows={true} dynamicHeight={true} showStatus={false}>
                 <div>
                     <p className="legend">Legend 1</p>
-                    <img src={detail.image}></img>
+                    <img className="project-image" src={detail.image}></img>
                 </div>
                 <div>
                     <img src="https://www.thesprucepets.com/thmb/LPnj-N-AcGdZRvf7E6y_Hsf2vqo=/4089x2300/smart/filters:no_upscale()/close-up-of-a-hamster-eating-groundnut-635096689-5c525f88c9e77c0001d7c1fa.jpg"></img>
@@ -35,6 +39,8 @@ const Projects = () => (
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>
+
+            <Clock></Clock>
       </div>
     ))
     }

@@ -25,7 +25,7 @@ const Projects = () => (
   <div>
     {details.map(detail => (
       <div className="project">
-        <Carousel useKeyboardArrows={true} dynamicHeight={true} showStatus={false}>
+        <Carousel useKeyboardArrows={true} dynamicHeight={true} showStatus={false} infiniteLoop={true}>
                 <div>
                     <p className="legend">Legend 1</p>
                     <img className="project-image" src={detail.image}></img>

@@ -2,9 +2,19 @@ import React from 'react';
 import './App.css';
 import Leaf from './Components/Leaf/Leaf.jsx';
 
+import 'font-awesome/css/font-awesome.min.css';
+
 
 const Interests = () => (
   <div>
+<i className="fa fa-basketball-ball"></i>
+<i className="fa fa-amazon"></i>
+<i className="fa fa-phone"></i>
+
+
+
+
+
 
     
     {/* <section> */}

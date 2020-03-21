@@ -7,9 +7,12 @@ import 'font-awesome/css/font-awesome.min.css';
 
 const Interests = () => (
   <div>
-<i className="fa fa-basketball-ball"></i>
-<i className="fa fa-amazon"></i>
-<i className="fa fa-phone"></i>
+{/* <i className="fa fa-basketball"></i>
+<i class="fa fa-snowboarding"></i>
+<i class="fa fa-dumbbell"></i> */}
+
+
+
 
 
 

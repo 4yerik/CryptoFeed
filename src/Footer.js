@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
 class Footer extends Component {
@@ -7,19 +7,23 @@ class Footer extends Component {
             <body className="footer">
                 <div>
                     <div>
-                    <i className="fab fa-linkedin-in"></i>
-                        <a target="blank" href="https://www.linkedin.com/in/yeri-kim">https://www.linkedin.com/in/yeri-kim</a>
+                        <a target="blank" aria-label="external link to Yeri Kim's linkedin profile" href="https://www.linkedin.com/in/yeri-kim">
+                        <i className="fa fa-linkedin-in"></i>
+                        </a>
                     </div>
+
                     <div>
-                        <i className="fab fa-github"></i>
-                        <a target="blank" href="https://www.github.com/4yerik">https://www.github.com/4yerik</a>
+                        
+                        <a target="blank" aria-label="external link to Yeri Kim's github profile" href="https://www.github.com/4yerik">
+                        <i className="fa fa-github"></i>
+                            </a>
                     </div>
                 </div>
-                
+
                 <p>Copyright © 2020 Yeri Kim</p>
             </body>
 
-            
+
         );
     }
 }

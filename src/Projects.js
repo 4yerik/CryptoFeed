@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Profiler} from 'react';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -24,10 +24,19 @@ const details = [
 
 ];
 
+const callback = (id, phase, actualTime, baseTime, startTime, commitTime) => {
+  // console.log(`${id}'s ${phase} phase:`);
+  // console.log(`Actual time: ${actualTime}`);
+  // console.log(`Base time: ${baseTime}`);
+  // console.log(`Start time: ${startTime}`);
+  // console.log(`Commit time: ${commitTime}`);
+};
+
 const Projects = () => (
   <div>
     {details.map(detail => (
-      <div className="project">
+      // <Profiler id="project-page" >
+      <div id="project-page" className="project">
         <Carousel useKeyboardArrows={true} dynamicHeight={true} showStatus={false} infiniteLoop={true}>
                 <div>
                     <p className="legend">{detail.name}</p>
@@ -45,6 +54,7 @@ const Projects = () => (
 
             <Clock></Clock>
       </div>
+      // </Profiler>
     ))
     }
   </div>

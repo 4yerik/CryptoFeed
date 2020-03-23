@@ -17,7 +17,7 @@ class Experience extends Component {
                 role: "Software Developer",
                 type: "short",
                 textOne: "The Cooperators is a Canadian insurance company based in Guelph, Ontario. It was founded in 1945 and currently has more than 4000 employees.",
-                textTwo: "From January 2020 to April 2020, I added a section for claim details and a file upload dropzone to the website. This was done with the goal of reducing calls to the call centre.",
+                textTwo: "From January 2020 to April 2020, I added a section for claim updates and a file upload dropzone to the website. This was done with the goal of reducing calls to the call centre.",
                 textThree: "I used React hooks to improve code readability and efficiency. In addition, I followed accessibility best practices with aria, tabindex and role attributes.",
             },
             {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'
-import Letter from './Components/Letter/Letter.jsx';
+import Letter from './Components/Letter.jsx';
 
 
 class Home extends Component {
@@ -11,7 +11,7 @@ class Home extends Component {
 
 
         return (
-            <div>
+            <div className="main">
 
                 <div className="board">
                     {phrase.map(letter => (

@@ -1,7 +1,7 @@
 // import React from 'react';
 import './App.css';
 import React, { Component } from 'react';
-import Card from './Components/Card/Card.jsx';
+import Card from './Components/Card.jsx';
 import { isDeclareTypeAlias } from '@babel/types';
 
 class Experience extends Component {

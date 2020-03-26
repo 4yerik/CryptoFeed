@@ -2,7 +2,7 @@ import React, {Profiler} from 'react';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import Clock from './Components/Clock/index.jsx'
+import Clock from './Components/Clock.jsx'
 
 const details = [
   {
@@ -37,7 +37,7 @@ const Projects = () => (
     {details.map(detail => (
       // <Profiler id="project-page" >
       <div id="project-page" className="project">
-        <Carousel useKeyboardArrows={true} dynamicHeight={true} showStatus={false} infiniteLoop={true}>
+        <Carousel showThumbs={false} useKeyboardArrows={true} dynamicHeight={true} showStatus={false} infiniteLoop={true}>
                 <div>
                     <p className="legend">{detail.name}</p>
                     <img className="project-image" src={detail.image}></img>

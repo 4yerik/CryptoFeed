@@ -1,12 +1,7 @@
 .App {
   text-align: center;
-  margin: 0 auto
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
 .main {
@@ -100,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .nav-home {
-  padding-left: 50px;
-  width: 150px;
+  /* padding-left: 50px; */
+  /* width: 150px; */
   list-style: none;
   text-decoration: none;
   display: inline-block;
@@ -123,11 +118,12 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links {
   display:flex;
   list-style: none;
+  align-content: flex-end;
 }
 
 .nav-item a {
   display: inline-block;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   text-decoration: none;
   color: black;
 }
@@ -191,9 +187,12 @@ ul {
 
 .card {
   border: 10px solid;
+  margin-bottom: 50px;
+  /* border-top: 5px solid;
+  border-bottom: 5px s */
   border-color: 	#e3d4b6;
   border-radius: 2px;
-  margin: 20px 50px 80px 50px;
+  /* margin: 20px 50px 80px 50px; */
   padding: 20px 20px;
   background-color: white;
 }
@@ -311,4 +310,8 @@ img {
   /* border-left: 2px black solid; */
   padding: 50px 80px;
   max-width: 800px;
+}
+
+.project-image {
+  size: cover
 }

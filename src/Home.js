@@ -7,7 +7,7 @@ class Home extends Component {
 
     render() {
 
-        const phrase = "TODAY IS A*WONDERFUL DAY|ONE I HAVE*NEVER SEEN :)".split('');
+        const phrase = "REACT :)".split('');
 
 
         return (
@@ -25,6 +25,12 @@ class Home extends Component {
                 <div>
                     <div>React</div>
                     <div>GraphQL</div>
+                    {/* // image="https://github.com/4yerik/images/blob/master/family/senior.png?raw=true"
+
+// image="https://github.com/4yerik/images/blob/master/family/montSutton.PNG?raw=true"
+
+
+// image="https://github.com/4yerik/images/blob/master/family/gym.jpg?raw=true" */}
                 </div>
 
 

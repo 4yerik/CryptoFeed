@@ -1,6 +1,35 @@
 .App {
   text-align: center;
+  align-content: center;
   margin: 0 auto;
+  /* max-width: 1500px; */
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0px 30px;
+  background: linear-gradient(90deg, rgba(238,174,202,0.4) 0%, rgba(233,228,148,0.4) 100%);
+
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-100 {
+  flex: 0 0 100%;
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%; */
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .col-lg-33 {
+    flex: 0 0 33.3%!important;
+    max-width: 33.3%!important;
+  }
+}
+
+.view {
   max-width: 1500px;
 }
 
@@ -60,7 +89,7 @@
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+
 .column {
   flex: 32%;
   max-width: 32%;
@@ -73,7 +102,6 @@
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -88,20 +116,21 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* display: inline-block; */
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5
 }
 
 
 .nav-home {
-  /* padding-left: 50px; */
-  /* width: 150px; */
   list-style: none;
   text-decoration: none;
   display: inline-block;
   vertical-align: center;
   font-size: 20pt
+}
+
+a:visited {
+  color: black;
 }
 
 .navbar {
@@ -110,9 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   height: 80px;
   background-color: transparent
-  /* background-color: #fbf7fc */
 
-  /* #D4D5DA */
 }
 
 .nav-links {
@@ -123,7 +150,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-item a {
   display: inline-block;
-  /* padding: 10px 30px; */
   text-decoration: none;
   color: black;
 }
@@ -143,7 +169,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 80px;
   justify-content: space-between;
   border-top: 1px solid #e5d08f;
-  /* background-color: #cacbce; */
   height: 60px;
   color:  black;
   
@@ -170,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 ul {
     list-style-type: none;
     padding: 0 40px
-} */
+} 
 
 
 #container{
@@ -187,12 +212,9 @@ ul {
 
 .card {
   border: 10px solid;
-  margin-bottom: 50px;
-  /* border-top: 5px solid;
-  border-bottom: 5px s */
+  margin-bottom: 100px;
   border-color: 	#e3d4b6;
-  border-radius: 2px;
-  /* margin: 20px 50px 80px 50px; */
+  border-radius: 50px;
   padding: 20px 20px;
   background-color: white;
 }
@@ -211,6 +233,13 @@ ul {
   border-top: 2px solid;
   border-color: #e1dfdf;
   text-align: left;
+
+  
+}
+
+@media only screen and (max-width: 800px) {
+  width: 100%;
+  
 }
 
 .info-pic {
@@ -218,7 +247,7 @@ ul {
   margin: 10px 40px;
   width: 30%;
   /* border: 2px solid; */
-  /* border-color: silver; */
+  /* border-color: silver;  */
   text-align: left;
 }
 
@@ -229,11 +258,11 @@ img {
 .letter {
   font-size: 50px;
   width: 40px;
-  border: 3px solid;
-  border-color: #cacbce;
+  /* border: 3px solid; */
+  background-color: rgba(238, 174, 202, 0.4);
   padding: 20px 20px;
-  margin: 5px 0px;
-  background-color: #e1dfdf;
+  margin: 5px 5px;
+  /* border-color: rgba(233, 228, 148, 1); */
 }
 
 .space {
@@ -241,12 +270,7 @@ img {
   background-color: transparent !important;
 }
 
-.thin {
-  width: 10px;
-}
-
 .block {
-  /* font-size: 50px; */
   padding: 20px 50px;
   width: 150px;
   margin: 5px 0px;
@@ -257,30 +281,9 @@ img {
   flex-wrap: wrap;
   margin: 40px 80px;
   padding: 40px 40px;
-  border: 10px solid;
-  border-color: #e5d08f;
-  background-color: #cacbce;
-}
-
-.leaf {
-  display: flex;
-  padding: 100px 100px;
-  
-}
-
-.leaf-text {
-  margin-top: 0px;
-  max-width: 400px;
-  text-align: left;
-  line-height: 2;
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px 20px;
-}
-
-.leaf-image {
-  width: 100%;
-  height: auto;
+  /* border: 10px solid; */
+  /* border-color: #e5d08f; */
+  /* background-color: #cacbce; */
 }
 
 .leaf-outer {
@@ -288,26 +291,7 @@ img {
   margin: 40px 80px;
 }
 
-.pl-50 {
-  padding-left: 50px;
-}
-
-.pt-20 {
-  padding-top: 20px;
-}
-
-.leaf-text-caption {
-  margin-top: 20px;
-  max-width: none;
-}
-
-.leaf-title {
-  color: white;
-  /* text-shadow: 3px 3px black; */
-}
-
 .project {
-  /* border-left: 2px black solid; */
   padding: 50px 80px;
   max-width: 800px;
 }
@@ -315,3 +299,4 @@ img {
 .project-image {
   size: cover
 }
+

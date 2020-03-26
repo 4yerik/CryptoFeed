@@ -12,10 +12,10 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
+      <div className="view">
+      <Router className="view">
 
-      <Router>
-
-      <Navbar title="dog"/>
+      <Navbar title="Yeri Kim"/>
         <Route path="/" exact component={Home} />
         <Route path="/experience" exact component={Experience} />
         <Route path="/projects" exact component={Projects} />
@@ -25,6 +25,7 @@ function App() {
         <Footer></Footer>
 
       </Router>
+      </div>
       {/* <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.

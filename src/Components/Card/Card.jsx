@@ -13,7 +13,7 @@ class Card extends Component {
                 {/* <h3>{this.props.period}</h3> */}
 
                 {/* <h2 style={{color: this.props.color}}></h2> */}
-                <div className="panel">
+                <div className="panel col-100 col-lg-33">
                     <div className="info">{this.props.mission}</div>
                     <div className="info">{this.props.textCenter}</div>
                     <div className="info">{this.props.textRight}</div>

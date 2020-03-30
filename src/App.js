@@ -20,7 +20,7 @@ function App() {
         <Route path="/experience" exact component={Experience} />
         <Route path="/projects" exact component={Projects} />
         {/* <Home></Home> */}
-      {/* <img src={logo} alt="logo" /> */}
+      
 
         <Footer></Footer>
 

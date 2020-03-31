@@ -19,9 +19,6 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/experience" exact component={Experience} />
         <Route path="/projects" exact component={Projects} />
-        {/* <Home></Home> */}
-      
-
         <Footer></Footer>
 
       </Router>

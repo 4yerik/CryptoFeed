@@ -8,14 +8,7 @@ class Letter extends Component {
             (this.props.value === " ") ?
                 <div className="space letter">{this.props.value}</div>
                 :
-                
-                this.props.value === "*"?
-                <div className="block"></div> : 
-
-                this.props.value==="|"?
-                <div className="thin"></div> :
                 <div className="letter">{this.props.value}</div>
-                
                 
         );
     }

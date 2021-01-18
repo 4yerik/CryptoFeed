@@ -61,7 +61,7 @@
   -o-transform:       rotate(90deg);
 }
 
-#prodigy {
+.blue {
   background-color: #4d98ff
 }
 
@@ -264,14 +264,5 @@ img {
 .leaf-outer {
   background: linear-gradient(to bottom,  #cacbce 0%,#cacbce 50%,#e1dfdf 50%,#e1dfdf 100%);
   margin: 40px 80px;
-}
-
-.project {
-  padding: 50px 80px;
-  max-width: 800px;
-}
-
-.project-image {
-  size: cover
 }
 
